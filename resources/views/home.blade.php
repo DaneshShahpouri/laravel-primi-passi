@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <h1>CIAO {{ $nome }}</h1>
+    <h1>CIAO {{ $nome1 }} {{$nome2}}</h1>
     
 </body>
 </html>

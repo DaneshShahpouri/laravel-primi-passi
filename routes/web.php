@@ -13,7 +13,26 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+// Compact
+
 Route::get('/', function () {
     $nome = 'Gianpiermaria';
     return view('home', compact('nome'));
+});
+
+
+//parametro
+Route::get('/prova1/{parametro}', function ($parametro) {
+    return 'Ciao ' . $parametro;
+});
+
+
+//array
+Route::get('/prova2', function () {
+    $data = [
+        'nome1' => 'Giacomino',
+        'nome2' => 'Giacomone'
+    ];
+    return view('home', $data);
 });
